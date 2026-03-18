@@ -1,0 +1,751 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuQyMdsg1WAMpKdkx0AWCr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "77b0727889564dea9a515bc73fc749bc": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_8a1d6661a10b44a5aadc3320e9eef46f",
+              "IPY_MODEL_2bc8baf74c2648098adaf0b689820990",
+              "IPY_MODEL_8d2ba497e60947a2b34be589e914352f"
+            ],
+            "layout": "IPY_MODEL_8b87413222b14198b4a22ae22fe6112b"
+          }
+        },
+        "8a1d6661a10b44a5aadc3320e9eef46f": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_4d3ba58842264d779b2e7c997e001923",
+            "placeholder": "​",
+            "style": "IPY_MODEL_811f3def84254dce977f183c0228122d",
+            "value": "Parsing nodes: 100%"
+          }
+        },
+        "2bc8baf74c2648098adaf0b689820990": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_532661d9ee9c435b916a14c63de4ad0f",
+            "max": 10,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_1fcbdb0e30ac47b6a30774ade0b54930",
+            "value": 10
+          }
+        },
+        "8d2ba497e60947a2b34be589e914352f": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_137bbf60756747d6827ff305bcf829b8",
+            "placeholder": "​",
+            "style": "IPY_MODEL_a966448d98c44a36a2cd4fb1f9407597",
+            "value": " 10/10 [00:00&lt;00:00, 103.71it/s]"
+          }
+        },
+        "8b87413222b14198b4a22ae22fe6112b": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "4d3ba58842264d779b2e7c997e001923": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "811f3def84254dce977f183c0228122d": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "532661d9ee9c435b916a14c63de4ad0f": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "1fcbdb0e30ac47b6a30774ade0b54930": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "137bbf60756747d6827ff305bcf829b8": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "a966448d98c44a36a2cd4fb1f9407597": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/joaomlduarte/chatbot/blob/main/Aula07\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "id": "LZUvsdW29xYG"
+      },
+      "outputs": [],
+      "source": [
+        "# Aula 07 - Chatbot utilizando o Gemini\n",
+        "\n",
+        "# Instalação das bibliotecas\n",
+        "!pip install -q --upgrade pip jedi\n",
+        "!pip install -q llama-index llama-index-readers-file llama-index-llms-google-genai llama-index-embeddings-google-genai\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Rode esta celula antes de usar o Gemini com o LlamaIndex\n",
+        "%pip install -q nest-asyncio\n",
+        "import nest_asyncio\n",
+        "nest_asyncio.apply()\n",
+        "import os\n",
+        "from google.colab import userdata\n",
+        "from llama_index.llms.google_genai import GoogleGenAI\n",
+        "from llama_index.embeddings.google_genai import GoogleGenAIEmbedding\n",
+        "from llama_index.core import Settings\n",
+        "\n",
+        "\n",
+        "# Pega a variável de ambiente\n",
+        "os.environ['aula07_chatbot'] = userdata.get('aula07_chatbot')\n",
+        "api = os.environ['aula07_chatbot']"
+      ],
+      "metadata": {
+        "id": "uqafEMssBGtt"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(api)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CJuFS7_DDgeF",
+        "outputId": "eb9c1460-bef5-45b4-e7ee-da20bd3bed01"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "AIzaSyDJ0im6QavEeKGpYy46TBo5X7jp8GNIuSc\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Cria a variavel chamada llm\n",
+        "llm = GoogleGenAI(\n",
+        "    model='gemini-2.0-flash',\n",
+        "    api_key = api\n",
+        ")\n",
+        "\n",
+        "Settings.llm = llm\n",
+        "#Settings.embed_model = embed_model"
+      ],
+      "metadata": {
+        "id": "yDli3z6IEARM"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1) Envie arquivo para a base de conhecimento utilizando a técnica RAG\n",
+        "\n",
+        "Cria uma pasta chamada documentos no Colab e envie os seus arquivos para lá"
+      ],
+      "metadata": {
+        "id": "W55cWKnbEo2r"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import files\n",
+        "import os\n",
+        "os.makedirs(\"/contents/documentos\", exist_ok=True)\n",
+        "print('Pasta criada em /content/documentos')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bk2782fgEvxM",
+        "outputId": "7ab1cd4d-ba73-4725-836b-9b10d530f650"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Pasta criada em /content/documentos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Leitura dos arquivos\n",
+        "from llama_index.core import SimpleDirectoryReader\n",
+        "documentos = SimpleDirectoryReader(input_dir=\"/content/documentos\")"
+      ],
+      "metadata": {
+        "id": "YHqRQdL_FvA9"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "docs = documentos.load_data()\n",
+        "print(f'Quantidade de documentos carregados {len(docs)}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PrkMXQj6GD7D",
+        "outputId": "61dff235-a52b-49f6-9c4e-4c1f7cf1f590"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Quantidade de documentos carregados 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Exibindo os metadados do documento\n",
+        "print(docs[0].get_metadata_str())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nyVjc2JcKFX-",
+        "outputId": "bcdbd2d0-4dcc-414f-c9e1-66d8aafb4915"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "page_label: 1\n",
+            "file_name: serenatto_cafes_especiais.pdf\n",
+            "file_path: /content/documentos/serenatto_cafes_especiais.pdf\n",
+            "file_type: application/pdf\n",
+            "file_size: 133957\n",
+            "creation_date: 2026-03-18\n",
+            "last_modified_date: 2026-03-18\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from llama_index.core import node_parser\n",
+        "# Quebrando o documentosem pedaços (nodes)\n",
+        "# importando a biblioteca\n",
+        "from llama_index.core.node_parser import SentenceSplitter\n",
+        "node_parser = SentenceSplitter(chunk_size=1200) # Tamanho da divisão\n",
+        "# Fazer a divisão do documento carregado com base no chunk size\n",
+        "nodes = node_parser.get_nodes_from_documents(docs, show_progress=True)\n",
+        "print(f\"Quantidade de nodes gerados: {len(nodes)}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 66,
+          "referenced_widgets": [
+            "77b0727889564dea9a515bc73fc749bc",
+            "8a1d6661a10b44a5aadc3320e9eef46f",
+            "2bc8baf74c2648098adaf0b689820990",
+            "8d2ba497e60947a2b34be589e914352f",
+            "8b87413222b14198b4a22ae22fe6112b",
+            "4d3ba58842264d779b2e7c997e001923",
+            "811f3def84254dce977f183c0228122d",
+            "532661d9ee9c435b916a14c63de4ad0f",
+            "1fcbdb0e30ac47b6a30774ade0b54930",
+            "137bbf60756747d6827ff305bcf829b8",
+            "a966448d98c44a36a2cd4fb1f9407597"
+          ]
+        },
+        "id": "ImjVa77aKSo0",
+        "outputId": "faff41bc-c2e5-4aa5-e67c-0459689f95b5"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Parsing nodes:   0%|          | 0/10 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "77b0727889564dea9a515bc73fc749bc"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Quantidade de nodes gerados: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Configurando o LLM Gemni e o modelo de embeddings\n",
+        "from llama_index.llms.google_genai import GoogleGenAI\n",
+        "from llama_index.embeddings.google_genai import GoogleGenAIEmbedding\n",
+        "from llama_index.core import Settings\n",
+        "\n",
+        "llm = GoogleGenAI(\n",
+        "    model = \"gemini-2.5-flash\",\n",
+        "    api_key = api\n",
+        ")\n",
+        "\n",
+        "embed_model = GoogleGenAIEmbedding(\n",
+        "    model = \"gemini-embedding-001\",\n",
+        "    api_key = api\n",
+        ")\n",
+        "\n",
+        "Settings.llm = llm\n",
+        "Settings.embed_model = embed_model\n",
+        "print(\"LLM e embeddings configurados\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bQ-zTmF3MEAU",
+        "outputId": "b6e981a6-fe1f-461c-daf2-c768c691024a"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "LLM e embeddings configurados\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2) Criando o índice vetorial, esse índice é criado sem o ChromaDB, diretamente em memória para simplificar a execução no Colab"
+      ],
+      "metadata": {
+        "id": "1XBuCiOhOTm2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from llama_index.core import VectorStoreIndex\n",
+        "index = VectorStoreIndex(nodes, embed_model = embed_model)\n",
+        "print('Índice criado com sucesso')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7ihs1jCOOjM9",
+        "outputId": "0f69a8ed-7be9-47aa-81db-a5faf346d497"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Índice criado com sucesso\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from llama_index.core.base.embeddings.base import similarity\n",
+        "# Realizando consultas no chatbot\n",
+        "# query_engine realiza consulta\n",
+        "query_engine = index.as_query_engine(llm = llm, similarity_top_k=2)\n",
+        "response = query_engine.query(\"Quais grãos estão disponíveis?\")\n",
+        "print(response)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2V9n3GjRPNkG",
+        "outputId": "88628597-bf8d-4e39-c82a-36fc26858b85"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "As variedades de café em grãos disponíveis são: Bourbon vermelho, Bourbon amarelo, Blend especial (uma mistura de Bourbon amarelo e vermelho), Catuaí amarelo, Geisha e Yirgacheffe.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "chat_engine = index.as_chat_engine(llm = llm, similarity_top_k=1)\n",
+        "response = query_engine.query(\"Qual o preço dos grãos?\")\n",
+        "print(response)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fr58lCxxQRbu",
+        "outputId": "a0439b79-7d13-4628-9fbe-e0d6cfa83d87"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Os preços dos grãos de café são os seguintes:\n",
+            "*   Bourbon vermelho: R$ 41,00\n",
+            "*   Bourbon amarelo: R$ 43,00\n",
+            "*   Blend especial: R$ 37,50\n",
+            "*   Catuaí amarelo: R$ 55,00\n",
+            "*   Geisha: R$ 105,00\n",
+            "*   Yirgacheffe: R$ 110,00\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
